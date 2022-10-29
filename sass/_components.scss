@@ -1,0 +1,93 @@
+/****************Card****************/
+
+.card {
+  width: 60rem;
+  height: 45rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+
+  &__product-image {
+    flex: 0 0 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0)), url('/images/image-product-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__product-details {
+    flex: 1;
+    padding: 3.2rem;
+  }
+
+  &__product-category {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__product-name {
+    font-size: 3.2rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-dark-blue);
+    margin-bottom: 2.5rem;
+  }
+
+  &__product-description {
+    line-height: 1.6;
+    margin-bottom: 2.8rem;
+  }
+
+  &__product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &__sale-price {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--color-dark-cyan);
+    margin-right: 2rem;
+  }
+
+  &__regular-price {
+    font-size: 1.3rem;
+    text-decoration: line-through;
+  }
+
+  &__button {
+    display: block;
+    background-color: var(--color-dark-cyan);
+    border-radius: 0.8rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+
+}
+
+/****************Attribution****************/
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a { 
+  color: var(--color-dark-cyan); 
+}

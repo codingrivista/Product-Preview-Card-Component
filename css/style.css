@@ -1,3 +1,11 @@
+:root {
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-dark-blue: hsl(212, 21%, 14%);
+  --color-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -9,19 +17,99 @@ html {
   box-sizing: inherit;
 }
 
-body  {
-  font-family: 'Fraunces', serif;
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
-  background-color: hsl(30, 38%, 92%);
+  background-color: var(--color-cream);
+  color: var(--color-grayish-blue);
+}
+
+.container {
+  height: 95vh;
+  min-height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************Card****************/
+.card {
+  width: 60rem;
+  height: 45rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+}
+.card__product-image {
+  flex: 0 0 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("/images/image-product-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card__product-details {
+  flex: 1;
+  padding: 3.2rem;
+}
+.card__product-category {
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.card__product-name {
+  font-size: 3.2rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-dark-blue);
+  margin-bottom: 2.5rem;
+}
+.card__product-description {
+  line-height: 1.6;
+  margin-bottom: 2.8rem;
+}
+.card__product-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.card__sale-price {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--color-dark-cyan);
+  margin-right: 2rem;
+}
+.card__regular-price {
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}
+.card__button {
+  display: block;
+  background-color: var(--color-dark-cyan);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-white);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
 }
 
 /****************Attribution****************/
-
-.attribution { 
+.attribution {
   font-size: 11px;
-  text-align: center; 
+  text-align: center;
 }
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+
+.attribution a {
+  color: var(--color-dark-cyan);
 }
