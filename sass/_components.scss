@@ -2,20 +2,35 @@
 
 .card {
   width: 60rem;
-  height: 45rem;
+  min-height: 45rem;
   background-color: #fff;
   border-radius: 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: 768px) {
+    & {
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 2fr;
+      margin: 2rem;
+    }
+  }
 
   &__product-image {
-    flex: 0 0 50%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0)), url('/images/image-product-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+    @media only screen and (max-width: 768px) {
+      & {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0)), url('/images/image-product-mobile.jpg');
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
   }
 
   &__product-details {
-    flex: 1;
     padding: 3.2rem;
   }
 
@@ -34,6 +49,12 @@
     line-height: 1;
     color: var(--color-dark-blue);
     margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: 768px) {
+      & {
+        font-size: 3rem;
+      }
+    }
   }
 
   &__product-description {
@@ -53,6 +74,12 @@
     font-size: 3.2rem;
     color: var(--color-dark-cyan);
     margin-right: 2rem;
+
+    @media only screen and (max-width: 768px) {
+      & {
+        font-size: 3rem;
+      }
+    }
   }
 
   &__regular-price {
@@ -60,7 +87,8 @@
     text-decoration: line-through;
   }
 
-  &__button {
+  &__button:link,
+  &__button:visited {
     display: block;
     background-color: var(--color-dark-cyan);
     border-radius: 0.8rem;
@@ -72,6 +100,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__button:active {
+    background-color: var(--color-darker-cyan);
+  }
+
+  &__button:hover {
+    opacity: 0.9;
   }
 
   &__button-icon {
@@ -87,6 +123,7 @@
 .attribution { 
   font-size: 11px;
   text-align: center;
+  margin: 1rem;
 }
 .attribution a { 
   color: var(--color-dark-cyan); 
