@@ -50,14 +50,14 @@ body {
   }
 }
 .card__product-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("/images/image-product-desktop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("../images/image-product-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem 0 0 0.5rem;
 }
 @media only screen and (max-width: 768px) {
   .card__product-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("/images/image-product-mobile.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("../images/image-product-mobile.jpg");
     border-radius: 1rem 1rem 0 0;
   }
 }
