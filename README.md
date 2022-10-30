@@ -1,50 +1,45 @@
-# Frontend Mentor - Product preview card component solution
+# Product preview card component
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
 
-### The challenge
+This product card component has been built using HTML and CSS. I have used SASS instead of vanilla CSS and compiled it using Gulp.js. Also, BEM (Block, Element, Modifier) methodology have been used for naming the classes.
 
-Users should be able to:
+## Screenshot
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+**Desktop version:**
 
-### Screenshot
+![Desktop Version of Product Preview Card Component](https://github.com/codingrivista/Product-Preview-Card-Component/blob/master/screenshots/Product-Preview-Card-Component-desktop-version.png)
 
-![](./screenshot.jpg)
+**Mobile version:**
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Mobile Version of Product Preview Card Component](https://github.com/codingrivista/Product-Preview-Card-Component/blob/master/screenshots/Product-Preview-Card-Component-mobile-version.jpeg)
+
+## Links
+
+- Get the code here: [Code](https://github.com/codingrivista/Product-Preview-Card-Component)
+- Check out the demo: [Demo](https://codingrivista.github.io/Product-Preview-Card-Component/)
 
 
-### Links
+## Built with
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML
+- CSS
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- SASS
 
 ## Author
 
 - Website - [Sandipan Mukherjee](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@codingrivista](https://www.frontendmentor.io/profile/codingrivista)
+- Twitter - [@codingrivista](https://www.twitter.com/codingrivista)
